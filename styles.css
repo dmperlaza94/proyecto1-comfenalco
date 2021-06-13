@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+header {
+  background: rgb(16, 19, 78);
+  color: white;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+}
+
+header h1 {
+  float: left;
+}
+.menu {
+  float: right;
+  margin-top: 12px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.menu a:hover {
+  background: rgb(251, 251, 251, 0.5);
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+#banner {
+  height: 700px;
+  background: url(./imagenes/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#banner h2 {
+  font-size: 45px;
+}
+#banner p {
+  font-size: 30px;
+}
+
+#banner .container {
+  position: relative;
+  top: 30%;
+  color: black;
+}
+#banner .container a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin-top: 7px;
+  border: 3px solid black;
+  width: 90px;
+  padding: 8px;
+}
+
+#banner .container a:hover {
+  background: rgb(16, 19, 78);
+  color: white;
+}
+section {
+  margin-bottom: 20px;
+}
+#Biography h3 {
+  text-align: center;
+  font-size: 30px;
+}
+#Biography p {
+  padding: 10px;
+  font-size: 25px;
+}
+#album {
+  font-size: 30px;
+}
+#album h4 {
+  color: black;
+}
+.discos {
+  width: 100%;
+  height: 100%;
+  max-width: 380px;
+  max-height: 380px;
+}
+#album .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+article {
+  margin: 15px;
+}
+
+#album h3,
+h4 {
+  text-align: center;
+}
+#album h4 {
+  font-size: 20px;
+}
+#hobby h3,
+h4 {
+  text-align: center;
+  color: white;
+}
+#hobby {
+  background: rgba(16, 19, 78);
+}
+#hobby .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info-hobby img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 7px solid white;
+}
+.info-hobby {
+  margin: 20px;
+}
+footer {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+}
+footer .iconos-redes {
+  padding: 10px;
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media (max-width: 700px) {
+  body p {
+    font-size: 15px;
+  }
+  #banner h2 {
+    font-size: 30px;
+  }
+}
